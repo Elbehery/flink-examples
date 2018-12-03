@@ -39,12 +39,11 @@ public class FilterMovies {
     // MapFunction
     private static class MovieMapper implements MapFunction<Tuple3<Long, String, String>, Movie> {
 
-        private Movie movie;
 
         @Override
         public Movie map(Tuple3<Long, String, String> value) throws Exception {
 
-            movie = new Movie(value.f0, value.f1, parseStringIntoGenresSet(value.f2));
+            Movie movie = new Movie(value.f0, value.f1, parseStringIntoGenresSet(value.f2));
             return movie;
         }
 
