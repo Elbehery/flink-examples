@@ -1,4 +1,4 @@
-package com.plural.sight.understanding;
+package com.plural.sight.understanding.batch;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
