@@ -28,8 +28,6 @@ public class FlinkMain {
                 .groupBy(0)
                 .sum(1)
                 .print();
-
-
     }
 
     private static class WordCounter implements FlatMapFunction<String, String> {
